@@ -5,16 +5,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "illuminate/contracts": "^11.0",
-        "illuminate/support": "^11.0",
+        "illuminate/contracts": "^12.0",
+        "illuminate/support": "^12.0",
         "symfony/mime": "^7.0",
         "tijsverkoyen/css-to-inline-styles": "^2.2"
     },
     "require-dev": {
         "laravel/pint": "^1.10",
-        "pestphp/pest": "^2.0",
+        "pestphp/pest": "^3.0",
         "phpstan/phpstan": "^1.9",
-        "orchestra/testbench": "^9.0",
+        "orchestra/testbench": "^10.0",
         "symfony/var-dumper": "^7.4"
     },
     "autoload": {
