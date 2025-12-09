@@ -44,7 +44,7 @@ class CssInliner
 
     protected readonly LoggerInterface $logger;
 
-    public function __construct(LoggerInterface $logger = null)
+    public function __construct(?LoggerInterface $logger = null)
     {
         $this->instanceId = (string) Str::uuid();
         $this->logger = $logger ?? new NullLogger();
@@ -348,7 +348,7 @@ class CssInliner
             return $email;
         }
 
-        $email->html($this->convertInternalHtml($body));
+        $email->html($this->convertInternalHtml((string) $body));
 
         Event::dispatch(new PostEmailCssInlineEvent($email, $this));
 
@@ -573,7 +573,7 @@ class CssInliner
      */
     public static function singleton(): self
     {
-        return app(CssInliner::class); /** @phpstan-ignore-line */
+        return app(CssInliner::class);
     }
 
     /**

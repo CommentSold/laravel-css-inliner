@@ -4,18 +4,18 @@
     "description": "Converts CSS classes to inline styles within Laravel email",
     "license": "MIT",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "illuminate/contracts": "^11.0",
         "illuminate/support": "^11.0",
-        "symfony/mime": "^6.1",
+        "symfony/mime": "^7.0",
         "tijsverkoyen/css-to-inline-styles": "^2.2"
     },
     "require-dev": {
         "laravel/pint": "^1.10",
         "pestphp/pest": "^2.0",
         "phpstan/phpstan": "^1.9",
-        "orchestra/testbench": "^8.0",
-        "symfony/var-dumper": "^5.4.9 || ^6.0.9"
+        "orchestra/testbench": "^9.0",
+        "symfony/var-dumper": "^7.4"
     },
     "autoload": {
         "psr-4": {
